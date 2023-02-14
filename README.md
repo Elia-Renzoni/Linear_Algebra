@@ -11,6 +11,4 @@ This program concerned the verification of the conjecture of Beal, Cramer and Co
   if the initial number, insert by the users, is odd => f = n * 3 + 1
   if the initial number, insert by the users, is even => f = n / 2
 
-* Cramer ->
-
-
+* Cramer -> .
