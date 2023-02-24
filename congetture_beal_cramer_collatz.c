@@ -471,13 +471,3 @@ void fattore_primo(int basi_congettura[])     /* input : valore delle basi */
 	}
     }
 }
-
-
-
-
-
-
-
-
-
-
