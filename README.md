@@ -1,5 +1,5 @@
 # Linear Algebra Project 
-> University of Urbino, Procedural Programming Teaching Project 
+> University of Urbino, Procedural Programming Teaching Project - Bachelor's Degree in Applied Computer Science
 
 The project is about solving the conjectures of Beal, Cramer and Collatz. 
 
