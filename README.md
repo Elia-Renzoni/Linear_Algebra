@@ -78,5 +78,44 @@ void calcola_collatz(int num)     /* input : valore del numero */
     }
 }
 ```
+The conjecture is true if the sequence end with $1$
 * Cramer > 
+```C
+/* definizione della funzione per la verifica della congettura 
+ * di Cramer */
+void calcola_cramer(const int valore_numeri[])  /* input : valore dei numeri */
+{
+    /* dichiarazione delle variabili locali alla funzione */
+    double num_p;            /* lavoro : numero piu' piccolo */
+    int    i,                /* lavoro : variabile di controllo */
+	   differenza,       /* lavoro : differenza tra i due numeri */
+	   val_ass;          /* lavoro : valore assoluto della differenza */
+    double log_natu,         /* lavoro : logaritmo naturale del num. piu' piccolo */
+	   quadr_ln;         /* lavoro : quadrato del logaritmo naturale */
+
+    /* calcola la differenza tra i numeri e assegna il numero 
+     * piu' piccolo alla variabile num_p */
+    for (i = 0;
+        (i < MAX_ARR_CRAMER);
+	 i++)
+    
+	if (i == 1)
+	{
+	    differenza = valore_numeri[i] - valore_numeri[i - 1];
+	    num_p = valore_numeri[i - 1];
+	}
+
+    /* calcola e comunica all'utente i risultati delle due 
+     * operazioni */
+    val_ass = abs(differenza);
+    printf("Valore assoluto della differenza : %d \n",
+           val_ass);
+    log_natu = log(num_p);
+    quadr_ln = pow(log_natu, 2.0);
+    printf("Quadrato del ln del numero piu' piccolo : %f \n",
+           quadr_ln);
+    
+}
+```
+The conjecture is ture if ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/4f6d7a86e7873aaa14b2f9cd4f5b61d19e0ce787)
 
